@@ -16,7 +16,7 @@ if [ -z $SGE_LOCALDIR ] ; then
 fi
 
 zcat ../../corpora/wmt/news.2019.en.shuffled.deduped.gz \
-    | parallel --pipe -j 40 -k --L 10000 en_erg_tokenizer \
+    | parallel --pipe -j 40 -k --L 10000 en_erg_tokenizer --remove-non-english \
     | progress \
     | pigz -c > tokenized.gz
 zcat tokenized.gz \

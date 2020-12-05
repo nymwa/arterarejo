@@ -11,7 +11,7 @@ if [ -n $SGE_QSUB ] ; then
 fi
 
 zcat ../../corpora/wmt/europarl-v9.en.gz \
-    | parallel --pipe -j 40 -k --L 10000 en_erg_tokenizer \
+    | parallel --pipe -j 40 -k --L 10000 en_erg_tokenizer --remove-non-english \
     | progress \
     | pigz -c > tokenized.gz
 zcat tokenized.gz \
