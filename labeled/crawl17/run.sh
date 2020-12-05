@@ -11,7 +11,7 @@ if [ -n $SGE_QSUB ] ; then
 fi
 
 zcat ../../corpora/wmt/news.2017.en.shuffled.deduped.gz \
-    | parallel --pipe -j 40 -k --L 10000 en_erg_preprocess \
+    | parallel --pipe -j 40 -k --L 10000 en_erg_preprocess --remove-non-english \
     | progress \
     | pigz -c > labeled.gz
 
