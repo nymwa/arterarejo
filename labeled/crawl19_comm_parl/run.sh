@@ -20,7 +20,7 @@ zcat ../../corpora/wmt/europarl-v9.en.gz \
     | pigz -c > shuffled.gz
 
 zcat shuffled.gz \
-    | parallel --pipe -j 40 -k --L 10000 en_erg_preprocess \
+    | parallel --pipe -j 40 -k --L 10000 en_erg_preprocess --remove-non-english \
     | progress \
     | pigz -c > labeled.gz
 

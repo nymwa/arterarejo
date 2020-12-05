@@ -18,4 +18,4 @@ for N in `seq 1 99` ; do
 done
 
 falsliter-data-merge $SRC $TRG src.npy trg.npy
-
+#rm -rf tmp
