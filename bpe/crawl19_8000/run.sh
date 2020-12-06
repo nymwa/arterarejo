@@ -17,6 +17,10 @@ fi
 
 echo '□' > ${SGE_LOCALDIR}/normalized.txt
 echo '▨' >> ${SGE_LOCALDIR}/normalized.txt
+for X in `seq 2 100000` ; do
+    echo '□' >> ${SGE_LOCALDIR}/normalized.txt
+    echo '▨' >> ${SGE_LOCALDIR}/normalized.txt
+done
 zcat ../../tokenized/crawl19/tokenized.gz \
     | parallel --pipe -j 40 -k --L 100000 "reguligilo -lz" \
     | progress >> ${SGE_LOCALDIR}/normalized.txt
