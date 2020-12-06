@@ -29,7 +29,7 @@ zcat ../../tokenized/europarl/tokenized.gz \
 pyspm_train \
     --input ${SGE_LOCALDIR}/normalized.txt \
     --corpus_name crawl19 \
-    --vocab_size 16000 \
+    --vocab_size 32000 \
     --model_type bpe \
     --character_coverage 1.0
 
