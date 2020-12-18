@@ -1,0 +1,25 @@
+bea19:
+   start_path: ../errant/start.sh
+   valid_src: ../data/abcn/bea_train_16000/valid.src
+   test_src: ../data/abcn/bea_train_16000/test.src
+   valid_m2: ../corpora/bea19/train/wi+locness/wi+locness/m2/ABCN.dev.gold.bea19.m2
+conll:
+   m2_scorer: ../m2score/m2scorer/m2scorer
+   valid_src: ../data/conll/bea_train_16000/valid.src
+   test_src: ../data/conll/bea_train_16000/test.src
+   valid_m2: ../corpora/conll/conll13/release2.3.1/revised/data/official-preprocessed.m2
+   test_m2: ../corpora/conll/conll14/conll14st-test-data/alt/official-2014.combined-withalt.m2
+jfleg:
+   gleu_scorer: ../corpora/jfleg/jfleg/eval/gleu.py
+   valid_src: ../data/jfleg/bea_train_16000/valid.src
+   test_src: ../data/jfleg/bea_train_16000/test.src
+   valid_ref:
+      - ../corpora/jfleg/jfleg/dev/dev.ref0
+      - ../corpora/jfleg/jfleg/dev/dev.ref1
+      - ../corpora/jfleg/jfleg/dev/dev.ref2
+      - ../corpora/jfleg/jfleg/dev/dev.ref3
+   test_ref:
+      - ../corpora/jfleg/jfleg/test/test.ref0
+      - ../corpora/jfleg/jfleg/test/test.ref1
+      - ../corpora/jfleg/jfleg/test/test.ref2
+      - ../corpora/jfleg/jfleg/test/test.ref3
