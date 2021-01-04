@@ -1,5 +1,5 @@
 source_path: ../../../start.sh
-data: ../../../data/bea19_train/bea19_train_16000_dropout1
+data: ../../../data/bea19_train/bea19_train_16000_10
 data_indices:
    - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
    - [50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
@@ -9,32 +9,15 @@ data_indices:
 seed_list: [4654, 9630, 27029, 38836, 46738]
 train:
    max_epoch: 50
-   arch: big
-   share_all_embeddings: true
-   prenorm: true
    update_freq: 2
-   max_tokens: 6000
-   dropout: 0.3
-   attention_dropout: 0.2
-   activation_dropout: 0.2
-   activation_fn: gelu
-   adam_betas: [0.9, 0.999]
-   lr: 1.0e-03
+   max_tokens: 4000
+   lr: 1.5e-03
    warmup_updates: 8000
-   warmup_init_lr: 1.0e-07
-   clip_norm: 1.0
-   weight_decay: 1.0e-03
-   label_smoothing: 0.1
 generate:
-   test: false
-   lenpen: [0.6]
-   beam: [12]
-   batch_size: 64
-   ensemble_batch_size: 8
    epoch:
       start: 11
       step: 1
 rescore:
-   lambda: [0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25, 0.275, 0.3]
+   lambda: [0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25, 0.275, 0.3, 0.325, 0.35, 0.375, 0.4, 0.425, 0.45, 0.475, 0.5]
 eval_config: ../../eval_config.bea_train_16000.absolute.yaml
 

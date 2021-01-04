@@ -516,7 +516,7 @@
 - confusion:
    mean: 0.005
    std: 0.005
-   model_path: ../../../afiksilo/all/afiksilo_dict.pickle
+   model_path: ../../afiksilo/all/afiksilo_dict.pickle
 - adj_infl:
    mean: 0.05
    std: 0.05
@@ -541,7 +541,7 @@
    mean: 0.05
    std: 0.05
    char_prob: 0.9
-   score_path: ../../../falsliter/crawl19_comm_parl/merge/score.dat
+   score_path: ../../falsliter/crawl19_comm_parl/merge/score.dat
    n: 2
    temp: 2.0
 - del_orth:
@@ -551,7 +551,7 @@
    mean: 0.03
    std: 0.03
    penalty: 0.8
-   dict_path: ../../../ortobruilo/all/orto_dict.pickle
+   dict_path: ../../ortobruilo/all/orto_dict.pickle
 - an_wo:
    mean: 0.03
    std: 0.03
