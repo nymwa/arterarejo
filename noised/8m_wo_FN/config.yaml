@@ -1,0 +1,124 @@
+- to:
+   mean: 0.05
+   std: 0.05
+- comma:
+   mean: 0.1
+   std: 0.1
+- ins_left_comma:
+   mean: 0.1
+   std: 0.1
+- ins_right_comma:
+   mean: 0.1
+   std: 0.1
+- period:
+   mean: 0.1
+   std: 0.1
+- hyphen:
+   mean: 0.05
+   std: 0.05
+- two_hyphens:
+   mean: 0.05
+   std: 0.05
+- ins_hyphen:
+   mean: 0.05
+   std: 0.05
+- quot:
+   mean: 0.05
+   std: 0.05
+- colon:
+   mean: 0.05
+   std: 0.05
+- semicolon:
+   mean: 0.05
+   std: 0.05
+- hatena:
+   mean: 0.05
+   std: 0.05
+- bang:
+   mean: 0.05
+   std: 0.05
+- ent:
+   mean: 0.03
+   std: 0.03
+   ratio: 0.20
+   threshold: 0.50
+- title:
+   mean: 0.01
+   std: 0.01
+- uncase:
+   mean: 0.03
+   std: 0.03
+- auxpass:
+   mean: 0.03
+   std: 0.03
+- synonym:
+   mean: 0.05
+   std: 0.05
+- confusion:
+   mean: 0.005
+   std: 0.005
+   model_path: ../../afiksilo/all/afiksilo_dict.pickle
+- adj_infl:
+   mean: 0.05
+   std: 0.05
+- noun_infl:
+   mean: 0.05
+   std: 0.05
+- verb_infl:
+   mean: 0.1
+   std: 0.1
+   aux_ratio: 0.20
+- contr:
+   mean: 0.05
+   std: 0.05
+   delete_ratio: 0.25
+- del:
+   mean: 0.01
+   std: 0.01
+- spell:
+   mean: 0.05
+   std: 0.05
+   char_prob: 0.9
+   score_path: ../../falsliter/crawl19_comm_parl/merge/score.dat
+   n: 2
+   temp: 2.0
+- del_orth:
+   mean: 0.03
+   std: 0.03
+- ins_orth:
+   mean: 0.03
+   std: 0.03
+   penalty: 0.8
+   dict_path: ../../ortobruilo/all/orto_dict.pickle
+- an_wo:
+   mean: 0.03
+   std: 0.03
+   ratio: 0.10
+- of_wo:
+   mean: 0.02
+   std: 0.02
+- pp_wo:
+   mean: 0.02
+   std: 0.02
+   scale: 1.5
+- adv_wo:
+   mean: 0.03
+   std: 0.03
+   scale: 1.5
+- wh_wo:
+   mean: 0.02
+   std: 0.02
+   loc: 1.5
+   scale: 1.0
+- norm_wo:
+   mean: 0.3
+   std: 0.3
+   loc: 0.0
+   scale: 0.5
+- mask:
+   mean: 0.15
+   std: 0.15
+   p: 0.8
+   threshold_mean: 0.20
+   threshold_std: 0.20
+
