@@ -1,16 +1,16 @@
 set -ex
 
-if [ -z $WORKDIR ] ; then
+if [[ -z $WORKDIR ]] ; then
     WORKDIR=`dirname $0`
 fi
 cd $WORKDIR
 
-if [ -n $SGE_QSUB ] ; then
+if [[ -n $SGE_QSUB ]] ; then
     . /etc/profile.d/modules.sh
     source ../../start.sh
 fi
 
-if [ -z $SGE_LOCALDIR ] ; then
+if [[ -z $SGE_LOCALDIR ]] ; then
     mkdir tmp
     SGE_LOCALDIR=tmp
 fi

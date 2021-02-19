@@ -50,7 +50,16 @@ sh wmt/download.sh
 ```
 
 # Preprocessing for lang-8 dataset
+
+You can run script for preprocessing by command below.
+
 ```
 sh preprocessed/run.sh
+```
+
+If you want to run by `qsub` of Grid Engine, please run command below.
+
+```
+qsub -g (your group) -l rt_C.small=1 -l h_rt=0:10:0 -v WORKDIR=/path/to/arterarejo/corpora/preprocessed,IS_SGE=yes preprocessed/run.sh 
 ```
 

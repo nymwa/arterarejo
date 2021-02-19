@@ -1,4 +1,4 @@
-if [ -z $WORKDIR ] ; then
+if [[ -z $WORKDIR ]] ; then
     WORKDIR=`dirname $0`
 fi
 cd $WORKDIR
