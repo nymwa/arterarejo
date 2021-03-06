@@ -1,0 +1,10 @@
+source_path: ../../../start.sh
+pretrain:
+   base_dir: ../../../noised/8m_only_OR
+   trials: 50
+dataset:
+   valid_pref: ../../bea19_valid/crawl19_16000/valid
+bpe:
+   model: ../../../bpe/crawl19_16000/crawl19.16000.model
+   src_dropout: 0.1
+

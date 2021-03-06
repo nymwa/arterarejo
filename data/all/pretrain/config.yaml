@@ -1,0 +1,15 @@
+source_path: ../../../start.sh
+pretrain:
+   base_list:
+      - ../../../noised/all_15
+      - ../../../noised/all_16
+      - ../../../noised/all_17
+      - ../../../noised/all_18
+      - ../../../noised/all_19
+   trials: 100
+dataset:
+   valid_pref: ../../bea19_valid/crawl19_16000/valid
+bpe:
+   model: ../../../bpe/crawl19_16000/crawl19.16000.model
+   src_dropout: 0.1
+

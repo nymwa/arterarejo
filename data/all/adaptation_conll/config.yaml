@@ -1,0 +1,11 @@
+source_path: ../../../start.sh
+src_dict_path: ../pretrain/0/data-bin/dict.src.txt
+dataset:
+   m2:
+      - ../../../corpora/bea19/train/nucle/release3.3/bea2019/nucle.train.gold.bea19.m2
+   valid_pref: ../../bea19_valid/crawl19_16000/valid
+bpe:
+   model: ../../../bpe/crawl19_16000/crawl19.16000.model
+   src_dropout: 0.1
+trial: 100
+
