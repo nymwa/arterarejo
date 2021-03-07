@@ -5,7 +5,7 @@ if [[ -z $WORKDIR ]] ; then
 fi
 cd $WORKDIR
 
-if [[ -n $SGE_QSUB ]] ; then
+if [[ -n $IS_SGE ]] ; then
     . /etc/profile.d/modules.sh
     source ../../start.sh
 fi

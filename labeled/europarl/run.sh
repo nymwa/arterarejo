@@ -1,11 +1,11 @@
 set -ex
 
-if [ -z $WORKDIR ] ; then
+if [[ -z $WORKDIR ]] ; then
     WORKDIR=`dirname $0`
 fi
 cd $WORKDIR
 
-if [ -n $SGE_QSUB ] ; then
+if [[ -n $IS_SGE ]] ; then
     . /etc/profile.d/modules.sh
     source ../../start.sh
 fi
