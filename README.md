@@ -2,6 +2,9 @@
 
 Workspace for [`arteraro`](https://github.com/nymwa/arteraro)
 
+- ニューラル文法誤り訂正のための多様な規則を用いる人工誤り生成 (言語処理学会第27回年次大会)
+	- Please use `v1.0.0` to reproduce results of this paper.
+
 ## how to use
 
 ### 1. download datasets
