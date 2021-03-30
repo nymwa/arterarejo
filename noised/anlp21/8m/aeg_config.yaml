@@ -1,0 +1,14 @@
+source_path: ../../start.sh
+preprocessed_gzip_list:
+   - ../../labeled/crawl19_comm_parl/labeled.gz
+spm_model: ../../bpe/crawl19_16000/crawl19.16000.model
+src_dropout: 0.1
+trials: 100
+min_len: 1
+max_len: 500
+threads: 40
+corpus_size: 8000000
+lines: 10000
+forming_lines: 100000
+tokenization_lines: 100000
+

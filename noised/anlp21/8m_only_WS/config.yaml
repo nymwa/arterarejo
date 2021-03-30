@@ -1,0 +1,67 @@
+- comma:
+   mean: 0.1
+   std: 0.1
+- ins_left_comma:
+   mean: 0.1
+   std: 0.1
+- ins_right_comma:
+   mean: 0.1
+   std: 0.1
+- period:
+   mean: 0.1
+   std: 0.1
+- hyphen:
+   mean: 0.05
+   std: 0.05
+- two_hyphens:
+   mean: 0.05
+   std: 0.05
+- ins_hyphen:
+   mean: 0.05
+   std: 0.05
+- quot:
+   mean: 0.05
+   std: 0.05
+- colon:
+   mean: 0.05
+   std: 0.05
+- semicolon:
+   mean: 0.05
+   std: 0.05
+- hatena:
+   mean: 0.05
+   std: 0.05
+- bang:
+   mean: 0.05
+   std: 0.05
+- ent:
+   mean: 0.03
+   std: 0.03
+   ratio: 0.20
+   threshold: 0.50
+- title:
+   mean: 0.01
+   std: 0.01
+- uncase:
+   mean: 0.03
+   std: 0.03
+- contr:
+   mean: 0.05
+   std: 0.05
+   delete_ratio: 0.25
+- spell:
+   mean: 0.05
+   std: 0.05
+   char_prob: 0.9
+   score_path: ../../falsliter/crawl19_comm_parl/merge/score.dat
+   n: 2
+   temp: 2.0
+- del_orth:
+   mean: 0.03
+   std: 0.03
+- ins_orth:
+   mean: 0.03
+   std: 0.03
+   penalty: 0.8
+   dict_path: ../../ortobruilo/all/orto_dict.pickle
+

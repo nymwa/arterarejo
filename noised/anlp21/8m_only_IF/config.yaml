@@ -1,0 +1,17 @@
+- to:
+   mean: 0.05
+   std: 0.05
+- auxpass:
+   mean: 0.03
+   std: 0.03
+- adj_infl:
+   mean: 0.05
+   std: 0.05
+- noun_infl:
+   mean: 0.05
+   std: 0.05
+- verb_infl:
+   mean: 0.1
+   std: 0.1
+   aux_ratio: 0.20
+
