@@ -1,8 +1,0 @@
-- synonym:
-   mean: 0.05
-   std: 0.05
-- confusion:
-   mean: 0.005
-   std: 0.005
-   model_path: ../../afiksilo/all/afiksilo_dict.pickle
-
