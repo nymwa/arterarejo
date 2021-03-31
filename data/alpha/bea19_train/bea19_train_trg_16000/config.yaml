@@ -1,0 +1,17 @@
+source_path: ../../../../start.sh
+dataset:
+   m2:
+      - ../../../../corpora/bea19/train/fce/fce/m2/fce.train.gold.bea19.m2
+      - ../../../../corpora/bea19/train/nucle/release3.3/bea2019/nucle.train.gold.bea19.m2
+      - ../../../../corpora/bea19/train/wi+locness/wi+locness/m2/A.train.gold.bea19.m2
+      - ../../../../corpora/bea19/train/wi+locness/wi+locness/m2/B.train.gold.bea19.m2
+      - ../../../../corpora/bea19/train/wi+locness/wi+locness/m2/C.train.gold.bea19.m2
+   m2_sample: [3, 3, 3, 3, 3]
+   tsv:
+      - ../../../../corpora/preprocessed/lang8.identical_removed.tsv
+   valid_pref: ../../bea19_valid/bea19_train_trg_16000/valid
+bpe:
+   model: ../../../../bpe/bea19_train_trg_16000/bea19_train_trg.16000.model
+   src_dropout: 0.1
+trial: 250
+
