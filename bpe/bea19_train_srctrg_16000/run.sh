@@ -34,7 +34,7 @@ cut -f 2 ../../corpora/preprocessed/lang8.identical_removed.tsv | reguligilo -lz
 
 pyspm_train \
     --input normalized.txt \
-    --corpus_name bea_train_srctrg \
+    --corpus_name bea19_train_srctrg \
     --vocab_size 16000 \
     --model_type bpe \
     --character_coverage 1.0 \
