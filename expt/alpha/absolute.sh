@@ -1,0 +1,3 @@
+fa_convert_eval_config eval_config.bea19_train_src_16000.yaml eval_config.bea19_train_src_16000.absolute.yaml
+fa_convert_eval_config eval_config.bea19_train_trg_16000.yaml eval_config.bea19_train_trg_16000.absolute.yaml
+fa_convert_eval_config eval_config.bea19_train_srctrg_16000.yaml eval_config.bea19_train_srctrg_16000.absolute.yaml

@@ -1,0 +1,35 @@
+errant_source_path: ../../errant/start.sh
+bea19:
+   valid_orig: ../../corpora/bea19/eval/ABCN.dev.bea19.orig
+   valid_m2: ../../corpora/bea19/train/wi+locness/wi+locness/m2/ABCN.dev.gold.bea19.m2
+   valid_src: ../../data/alpha/eval/bea19/bea19_train_srctrg_16000/valid.src
+   test_src: ../../data/alpha/eval/bea19/bea19_train_srctrg_16000/test.src
+conll:
+   m2_scorer: ../../m2score/m2scorer/m2scorer
+   valid_m2: ../../corpora/conll/conll13/release2.3.1/original/data/official-preprocessed.m2
+   test_m2: ../../corpora/conll/conll14/conll14st-test-data/noalt/official-2014.combined.m2
+   valid_src: ../../data/alpha/eval/conll/bea19_train_srctrg_16000/valid.src
+   test_src: ../../data/alpha/eval/conll/bea19_train_srctrg_16000/test.src
+fce:
+   valid_m2: ../../corpora/bea19/train/fce/fce/m2/fce.dev.gold.bea19.m2
+   test_m2: ../../corpora/bea19/train/fce/fce/m2/fce.test.gold.bea19.m2
+   valid_orig: ../../data/alpha/eval/fce/valid.src
+   test_orig: ../../data/alpha/eval/fce/test.src
+   valid_src: ../../data/alpha/eval/fce/bea19_train_srctrg_16000/valid.src
+   test_src: ../../data/alpha/eval/fce/bea19_train_srctrg_16000/test.src
+jfleg:
+   gleu_scorer: ../../corpora/jfleg/jfleg/eval/gleu.py
+   valid_orig: ../../corpora/jfleg/jfleg/dev/dev.src
+   test_orig: ../../corpora/jfleg/jfleg/test/test.src
+   valid_src: ../../data/alpha/eval/jfleg/bea19_train_srctrg_16000/valid.src
+   test_src: ../../data/alpha/eval/jfleg/bea19_train_srctrg_16000/test.src
+   valid_ref:
+      - ../../corpora/jfleg/jfleg/dev/dev.ref0
+      - ../../corpora/jfleg/jfleg/dev/dev.ref1
+      - ../../corpora/jfleg/jfleg/dev/dev.ref2
+      - ../../corpora/jfleg/jfleg/dev/dev.ref3
+   test_ref:
+      - ../../corpora/jfleg/jfleg/test/test.ref0
+      - ../../corpora/jfleg/jfleg/test/test.ref1
+      - ../../corpora/jfleg/jfleg/test/test.ref2
+      - ../../corpora/jfleg/jfleg/test/test.ref3

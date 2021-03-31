@@ -11,9 +11,11 @@ if [[ -n $IS_SGE ]] ; then
 fi
 
 VALIDM2=../../../../../corpora/bea19/train/wi+locness/wi+locness/m2/ABCN.dev.gold.bea19.m2
+TESTSRC=../../../../../corpora/bea19/eval/ABCN.test.bea19.orig
 
 BPEMODEL=../../../../../bpe/bea19_train_trg_16000/bea19_train_trg.16000.model
 
 m2_to_src < $VALIDM2 | reguligilo -a | pyspm_encode --model_file $BPEMODEL > valid.src
 m2_to_trg < $VALIDM2 | reguligilo -a | pyspm_encode --model_file $BPEMODEL > valid.trg
+reguligilo -a < $TESTSRC | pyspm_encode --model_file $BPEMODEL > test.src
 
